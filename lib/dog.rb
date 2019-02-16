@@ -55,7 +55,7 @@ class Dog
     WHERE name = ?
     SQL
 
-    what = DB[:conn].execute(sql, name)
-    what
+    DB[:conn].execute(sql, name).map dp |row|
+    self.new_from_db(row)
   end
 end
