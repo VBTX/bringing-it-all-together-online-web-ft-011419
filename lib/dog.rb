@@ -4,7 +4,7 @@ class Dog
   attr_accessor :name, :breed, :id
 
   def initialize(h)
-      h.each {|k,v| public_send("#{k}=",v)}
+      h.each {|k,v| send("#{k}=",v)}
   end
 
   def self.create_table
