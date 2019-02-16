@@ -43,6 +43,7 @@ class Dog
 
   def self.new_from_db(row)
     row[0] = id
+    binding.pry
     row[1] = name
     row[2] = breed
     new_dog = Dog.new(id, name, breed)
