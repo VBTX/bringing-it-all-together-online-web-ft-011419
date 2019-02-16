@@ -40,11 +40,10 @@ class Dog
   end
   end
 
-  def self.create(attr)
-    new_dog = Dog.new(name, breed)
-    new_dog.save
-    new_dog
-    binding.pry
+  def self.create(hash_of_attributes)
+      dog = self.new(hash_of_attributes)
+      dog.save
+      dog
   end
 
   def self.find_or_create_by(name:, breed:)
