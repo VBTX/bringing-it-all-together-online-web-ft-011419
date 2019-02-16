@@ -51,7 +51,6 @@ class Dog
     if !dog.empty?
       new_dog = {name:name, breed:breed}
       new_dog = Dog.new(new_dog)
-      new_dog.save
     else
       new_dog = self.create({:name => name, :breed => breed})
     end
