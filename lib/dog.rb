@@ -56,6 +56,7 @@ class Dog
     SQL
 
     what = DB[:conn].execute(sql, name)
+    what
   end
 
 end
