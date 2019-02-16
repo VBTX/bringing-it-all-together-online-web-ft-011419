@@ -49,7 +49,7 @@ class Dog
     dog = DB[:conn].execute("SELECT * FROM dogs WHERE name = ? AND breed = ?", name, breed)
     binding.pry
     if !dog.empty?
-      dog[0]
+      dog_data = dog[0]
 
       # new_dog = {name:name, breed:breed}
       # new_dog = Dog.new(new_dog)
