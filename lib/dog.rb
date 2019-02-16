@@ -59,6 +59,4 @@ class Dog
     what
     binding.pry
   end
-  end
-
 end
