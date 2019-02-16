@@ -44,8 +44,9 @@ class Dog
   end
 
   def self.new_from_db(row)
+      binding.pry
     row[0] = id
-    binding.pry
+
     row[1] = name
     row[2] = breed
     new_dog = Dog.new(id, name, breed)
