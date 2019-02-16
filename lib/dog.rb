@@ -50,6 +50,7 @@ class Dog
     binding.pry
     if !dog.empty?
       dog_data = dog[0]
+      new_dog = self.new_from_db(dog_data)
 
       # new_dog = {name:name, breed:breed}
       # new_dog = Dog.new(new_dog)
