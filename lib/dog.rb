@@ -5,7 +5,7 @@ class Dog
   attr_reader :id
   def initialize (attr)
     attr.each {|key, value| self.send(("#{key}="), value)}
-    self.id ||= nil
+    self.id = nil
   end
 
   def self.create_table
